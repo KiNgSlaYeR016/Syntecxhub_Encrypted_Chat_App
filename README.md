@@ -9,7 +9,7 @@ A server/client chat system where every message is encrypted with AES before it 
 - Client/server architecture over TCP sockets
 - AES-CBC encryption applied to every message, both directions
 - A fresh random IV generated for every single message (no IV reuse)
-- Pre-shared key handling — both client and server derive the same AES key from a shared passphrase using PBKDF2
+- Pre-shared key handling - both client and server derive the same AES key from a shared passphrase using PBKDF2
 - Supports multiple clients connected at the same time, each handled on its own thread
 - Nickname-based messages, broadcast to all other connected clients
 - Message logging to `chat_log.txt`
